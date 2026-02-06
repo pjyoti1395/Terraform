@@ -9,3 +9,7 @@ output "instance_type" {
 output "region" {
   value = var.region
 }
+
+output "amazon_linux_ami"{
+  value = aws_ami.amazon_linux.id
+}
