@@ -10,6 +10,6 @@ output "region" {
   value = var.region
 }
 
-output "amazon_linux_ami"{
-  value = aws_ami.amazon_linux.id
+output "amazon_linux_ami" {
+  value = data.aws_ami.amazon_linux.id
 }
