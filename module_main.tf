@@ -6,7 +6,7 @@ module "ec2_dev" {
   security_group_id =  aws_security_group.my_sg.id
   instance_name     =  "dev-ec2"
   key_name          =  aws_key_pair.terraform_key.key_name
-  private_key_path  =  "${path.module}/key123.pem"
+  private_key_path  =  "${path.module}/key123"
 }
 
 module "ec2_test" {
@@ -17,7 +17,7 @@ module "ec2_test" {
   security_group_id =  aws_security_group.my_sg.id
   instance_name     =  "test-ec2"
   key_name          =  aws_key_pair.terraform_key.key_name
-  private_key_path  =  "${path.module}/key123.pem"
+  private_key_path  =  "${path.module}/key123"
 
 }
 
