@@ -20,7 +20,7 @@ resource "aws_instance" "Terraform_Module_EC2" {
       type        = "ssh"
       user        = "ec2-user"
       private_key = file(var.private_key_path)
-      host        = self.private_ip
+      host        = self.public_ip
     }
   }
 }
