@@ -8,3 +8,7 @@ variable "region" {
   description = "AWS region to deploy"
   type        = string
 }
+
+variable "instance_count" {
+  type = number
+}
