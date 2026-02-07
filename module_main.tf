@@ -6,7 +6,7 @@ module "ec2_dev" {
   security_group_id = aws_security_group.my_sg.id
   instance_name     = "dev-ec2"
   key_name          = "key123"
-  private_key_path  = "private_keys"
+  private_key_path  = "/home/ec2-user/key123.pem"
 }
 
 module "ec2_test" {
@@ -17,7 +17,7 @@ module "ec2_test" {
   security_group_id = aws_security_group.my_sg.id
   instance_name     = "test-ec2"
   key_name          = "key123"
-  private_key_path  = "private_keys"
+  private_key_path  = "/home/ec2-user/key123.pem"
 
 }
 
