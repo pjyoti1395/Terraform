@@ -7,4 +7,19 @@ resource "aws_instance" "Terraform_Module_EC2" {
   tags = {
     Name = var.instance_name
   }
+
+    provisioner "remote-exec" {
+    inline = [
+      "echo 'Hello from remote-exec' > /tmp/remote_exec_test.txt",
+      "uname -a",
+      "whoami"
+    ]
+
+    connection {
+      type        = "ssh"
+      user        = "ec2-user"
+      private_key = file(var.private_key_path)
+      host        = self.private_ip
+    }
+  }
 }
