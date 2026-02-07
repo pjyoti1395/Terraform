@@ -17,3 +17,12 @@ variable "instance_name" {
   description = "Name tag for EC2"
   type        = string
 }
+
+
+variable "key_name" {
+  type = string
+}
+
+variable "private_key_path" {
+  type = string
+}
