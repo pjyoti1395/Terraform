@@ -2,7 +2,7 @@ output "instance_ids" {
   value = { for k, v in aws_instance.example : k => v.id }
 }
 
-output "instance_types" {
+output "instance_type" {
   value = { for k, v in aws_instance.example : k => v.instance_type }
 }
 

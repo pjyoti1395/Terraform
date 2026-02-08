@@ -6,7 +6,7 @@ output "instance_ids" {
 
 # Output the instance types
 
-output "instance_types" {
+output "instance_type" {
   value = aws_instance.Terraform_Module_EC2[*].instance_type
 }
 

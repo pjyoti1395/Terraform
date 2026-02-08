@@ -5,3 +5,9 @@ variable "server_config" {
     cache = "t2.small"
   }
 }
+
+
+variable  "region" {
+  description = "AWS region"
+  type = string
+}
