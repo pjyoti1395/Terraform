@@ -20,7 +20,7 @@ module "ec2_test" {
 
 }
 
-module "for_each_example {
+module "for_each_example" {
   source = "./modules/for_each"
    region = "us-east-1"
 }
