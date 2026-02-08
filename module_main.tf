@@ -15,9 +15,14 @@ module "ec2_test" {
   subnet_id         =  aws_subnet.my_subnet.id
   security_group_id =  aws_security_group.my_sg.id
   instance_name     =  "test-ec2"
-  instance_type  = var.instance_type
+  instance_type  =    var.instance_type
  
 
+}
+
+module "for_each_example {
+  source = "./modules/for_each"
+   region = "us-east-1"
 }
 
 
