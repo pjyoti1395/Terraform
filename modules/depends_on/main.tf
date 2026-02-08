@@ -1,4 +1,4 @@
-resource "aws_instance" "example" {
+resource "aws_instance" "depends_on_demo" {
   ami           = "ami-02781fbdc79017564"
   instance_type = "t2.micro"
   subnet_id     = "subnet-123456"
