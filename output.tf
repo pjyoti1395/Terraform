@@ -19,7 +19,7 @@ output "for_each_instance_ids" {
 }
 
 output "for_each_instance_types" {
-  value = module.for_each_example.instance_types
+  value = module.for_each_example.instance_type
 }
 
 output "ec2_dev_data" {
