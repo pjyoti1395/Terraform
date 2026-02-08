@@ -1,6 +1,6 @@
 resource "aws_instance" "depends_on_demo" {
   ami           = "ami-02781fbdc79017564"
-  instance_type = "t3.micro"
+  instance_type = "t3.small"
   subnet_id     = "subnet-123456"
 
   # Force dependency even if not referenced
